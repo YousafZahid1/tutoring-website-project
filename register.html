@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutor UP: Tutoring</title>
+    <link rel="stylesheet" href="registerr.css" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <nav>
+      <img src="TUIMG.png" style="margin-top: 80px;">
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="blank.html">HOME</a></li>
+                <li><a href="Contactus.html">CONTACT US</a></li>
+                <li><a href="blank.html#about-us">ABOUT US</a></li>
+                <li><a href="blankk.html">REGISTRATION</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">ONLINE TUTORING</h3>
+          <p class="text">
+            Reach Out to Us: You choose the date and time, and we will match you with the finest tutors.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <!-- <img src="location.png" class="icon" alt="" /> -->
+              <!-- <p>6560 Braddock Rd, Alexandria, VA 22312</p> -->
+            </div>
+            <div class="information">
+              <img src="email_dark_red.png" class="icon" alt="" />
+              <p>tutorupva@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="phone_dark_red-removebg-preview.png" class="icon" alt="" />
+              <p>703-231-6166</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61561324620866">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.youtube.com/@TutorUPVA">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://www.tiktok.com/@tutorupva">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/tutorupva/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off" onsubmit="return validateForm()">
+            <input type="hidden" name="access_key" value="10dac7f7-93e3-452c-8154-a45ef98cb5f3">
+            <h3 class="title">Tutor UP Tutoring</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" required />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" required />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" pattern="\d{10}" title="Phone number should be 10 digits" required />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input" required></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        // Show/hide the navigation menu
+        function showMenu() {
+          document.getElementById('navLinks').style.right = "0";
+        }
+  
+        function hideMenu() {
+          document.getElementById('navLinks').style.right = "-200px";
+        }
+  
+        // Validate the phone number
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+          const phoneInput = document.querySelector('input[name="phone"]');
+          const phonePattern = /^\d{10}$/;
+          const errorMessage = document.querySelector('.error-message');
+  
+          if (!phonePattern.test(phoneInput.value)) {
+            e.preventDefault();
+            errorMessage.style.display = 'block';
+          } else {
+            errorMessage.style.display = 'none';
+          }
+        });
+      </script>
+
+    <script src="app.js"></script>
+    <style>
+      /* Your CSS code here */
+      /* ... */
+    </style>
+  </body>
+</html>

@@ -1,0 +1,842 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.fff{
+    margin-top: 80px;
+}
+/* .flyer {
+    border: 3px solid #6b2e2e;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.flyer-header {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+ */
+
+
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7)),url('images/tjhsst.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url('tjhsst.jpg');
+    filter: brightness(83%);
+    position: relative;
+    /* top: 0; */
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom-right-radius: 141px;
+    border-top-left-radius: 114px;
+    
+    height: 29px;
+}
+
+
+
+
+nav img{
+    width: 150px;
+
+
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+
+
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-left: 50px;
+
+}
+/* .what{
+    font-size: 350px; */
+/* } */
+
+
+.text-box h1{
+    font-size: 57px;
+   
+    
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 34px;
+    color: #fff;
+
+}
+
+
+
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Ensures the animation overflow is hidden */
+}
+
+.hero-btn::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.4s cubic-bezier(0.5, 0, 0.5, 1); /* Animation transition */
+    z-index: 0; /* Ensure it's behind the text */
+}
+
+.hero-btn:hover::after {
+    left: 100%; /* Moves the white background fully to the right on hover */
+}
+
+.hero-btn span {
+    position: relative;
+    z-index: 1; /* Ensure text is above the pseudo-element */
+}
+
+/* Bounce animation for button press */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust bounce height as needed */
+    }
+}
+
+.hero-btn.clicked::after {
+    animation: bounce 0.5s;
+}
+
+
+
+
+/* large screen */
+nav .fa{
+    display: none;
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .text-box p{
+        margin-left: 31px;
+
+    }
+}
+
+@media(max-width:700px){
+    .nav{
+        height: 59px;
+    }
+    nav.fa{
+        /* margin-top: 26px;
+        height: 100px;
+        width: 100px; */
+    }
+    /* .container h1{
+        left: -61%;
+    } */
+    .nav img{
+        margin-top: 47px;
+        height: 128px;
+    }
+    .header{
+        margin-left: -267px;
+        width: 187%;
+        height: 100%;
+        /* margin-left: -46pxb; */
+
+
+    }
+    .container h1{
+        font-size: 40px;
+        margin-top: -50px;
+        margin-left: -90px;
+    }
+
+/* edit this */
+    .container img{
+        margin-left: -90px;
+
+    }
+    .text-box h1{
+        font-size: 20px;
+        
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #5a0e08;
+        height: 100vh;
+        /* width: 200px; */
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        width: 35%;
+
+    }
+    /* smalls creen */
+
+    nav .fa{
+        /* margin-top: 26px; */
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        margin-left: -161px;
+        height: 138px;
+        width: 147px;
+        margin-left: -95px;
+
+    }
+
+    .nav-links ul{
+        padding: 30px;
+
+
+    }
+
+
+
+}
+
+@media(min-width:429px){
+    .text-box p{
+        margin-left: -15px;
+    }
+}
+
+/* Course  */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+
+     
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+
+}
+
+
+
+p{
+  color: #777;  
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.course-col{
+    flex-basis: 31%;
+    background: #F5F5DC;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    
+}
+
+
+
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0,0,0,1.9);
+    transition: 0.56s;
+}
+
+
+@media(max-width:930px){
+    .row{
+        flex-direction: column;
+    }
+    .header-container
+
+}
+    
+@media(min-width:400){
+    .course-col{
+        flex-basis: 48%;
+    }
+    .row{
+        margin-left: 50px;
+    }
+}
+
+@media(max-width:700px){
+    .big{
+        margin-left: 50px;
+    }
+    .text-box{
+        margin-left: 83px;
+        color: white;
+    }
+    .row{
+        flex-direction: column;
+        margin-left: -59px;
+    }
+
+    .nav img{
+        margin-top: 47px;
+        height: 128px;
+    }
+    .testimonial-col{
+        margin-left: 50px;
+        margin-bottom: 30px;
+        flex-basis: 100%;
+        
+
+    }
+    .course-col{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        margin-left: 50px;
+    }
+    .nav-links{
+        /* background-image: initial;
+        background-color: rgb(72, 11, 6); */
+    }
+
+    /* footer  CODE*/
+
+
+}
+
+
+@media(min-width: 300px max-width:680px) {
+    .header{
+        margin-left: -223px;
+    }
+    
+}
+
+@media(min-height:760px){
+    .container{
+        /* background-color: rgb(27, 29, 30);
+        min-height: 117vh; */
+    }
+}
+
+
+
+/* campus */
+
+
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-top: 50px;
+}
+
+
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+.campus-col img{
+    width: 35%;
+    margin-left: -199px;
+    height: 100%;
+
+  
+
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+
+
+/* .layer:hover{
+    background: rgba(226,0,0,0.7)
+} */
+
+
+
+
+body{
+    /* background-color: #315868; */
+
+    /* original color */
+    /* background-color: #646b4b; */
+ 
+    /* filter: brightness(85%); */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+    animation: transitionIn 1s;
+    height: 100%;
+}
+
+
+.campus p{
+    padding-top: 15px;
+    color: white;
+    font-size: 23px;
+}
+
+
+.pclass{
+    color: white;
+    font-size: 23px;
+    padding-left: 472px;
+    margin-top: -143px;
+    letter-spacing: 3px;
+    margin-bottom: 64px;
+}
+
+
+
+.whyus h2{
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 12%;
+}
+
+.whyus p{
+    margin-top: 0.5%;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 14%;
+    color: black;
+    font-style: oblique;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+.course h1{
+    color: beige;
+}
+
+
+.course-col p{
+    color: black;
+    font-size: 19px;
+}
+
+
+/* 
+.f{
+    margin-top: 29px;
+    padding-top: 90px;
+} */
+
+
+
+
+.whyus h2{
+    /* color: beige; */
+    color: black;
+}
+
+.whyus p{
+    color: rgb(31, 30, 30);
+}
+
+.highlight{
+    color: #7a3f3f;
+
+}
+.highlights{
+    /* color: whitesmoke; */
+    color: #0b382f;
+}
+ 
+/* Testimonials */
+
+.testimonial {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+
+
+
+
+
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #7a3939;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 58px;
+    /* width: 90px; */
+
+
+}
+
+.testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testimonial-col p{
+    color: white;
+    font-size: 18px;
+    margin-left: -40px;
+}
+
+
+.testimonials h1{
+    margin-left: 0%;
+}
+
+
+
+.testimonial-col:hover{
+    box-shadow: 0 0 20px 0px rgb(0,0,0,1.9);
+    transition: 0.6s;
+}
+
+
+
+
+
+.circle img{
+    width: 10%;
+    margin-left: 50px;
+    width: 12%;
+    margin-top: -75px;
+}
+
+
+
+
+.container {
+    position: relative;
+    max-width: 50%;
+    margin-left: 50px;
+  }
+  
+  .container img {
+    display: block;
+    width: 50%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    /* margin-left: 358px; */
+
+}
+.containerr {
+    position: relative;
+    max-width: 50%;
+  }
+  
+  .containerr img {
+    display: block;
+    width: 50%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 178px;
+
+}
+  
+  
+.container h1 {
+    position: absolute;
+    top: 50%; /* Position the top of the element at the vertical center of its container */
+    left: 50%; /* Position the left side of the element at the horizontal center of its container */
+    transform: translate(55%, -50%); /* Center the element perfectly both vertically and horizontally */
+    color: #7a3939;
+    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
+    padding: 10px 20px; /* Add padding around the text for spacing */
+    font-size: 35px;
+
+}
+
+
+
+/* footer */
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+    color: white;
+
+
+}
+
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
+
+.back{
+    /* background-color: url(new_image_with_inner_circles\ \(1\).png); */
+    background-image: url(new_image_with_inner_circles\ \(1\).png);
+    /* filter: brightness(97%); */
+    
+}
+
+
+
+
+.icons{
+    color: white;
+}
+
+
+
+.course-col h3{
+    color: #7a3939;
+}
+
+
+.f{
+    color: darkblue;
+}
+
+
+
+.darkgreen{
+    color: #0b382f;
+}
+
+
+
+
+
+
+
+
+
+
+.footer h3{
+    margin-left: 0px;
+    margin-left: -900px;
+}
+
+
+.footer h4{
+    margin-left: 0px;
+    margin-left: -900px;
+    margin-top: 30px;
+    color: white;
+    
+}
+
+
+.links a{
+    margin-left: 0px;
+    margin-left: -900px;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+}
+
+
+.pvalue{
+    
+    margin-left: 222px;
+    margin-top: -192px;
+    font-size: 17px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .size{
+    width: 200px;
+    height: 100px;
+    margin-left: 350px;
+    margin-top: 60px;
+} */
+
+/* .fate{
+    width: 20px;
+    height
+}
+ */
+
+
+/* 
+
+.what{
+    margin-left: -18px;
+    /* font-size: 323px; */
+/* } */ 
+
+
+
+/* body{
+    padding: 0;
+
+} */
+/* 
+body 
+{
+background-image: url('tjhsst.jpg');
+padding-left: 11em;
+padding-right: 20em;
+font-family:
+Georgia, "Times New Roman",
+Times, serif; 
+color: red;        
+} */
+
+
+
+
+/* menuuuu */
+
+

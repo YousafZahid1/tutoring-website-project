@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutor UP: Contact Us</title>
+    <link rel="stylesheet" href="contactuscss.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <section>
+      <nav>
+        <img src="TUIMG.png" style="margin-top: 80px;">
+          <div class ="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="blank.html">HOME</a></li>
+                  <li><a href="Contactus.html">CONTACT US</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="blankk.html">REGISTRATION</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+   </section> -->
+   <section>
+    <!-- <img src ="images/banner.png" class="header"/> -->
+      <nav>
+          <!-- <a href="index.html"><img src ="TUIMG.png"></a> -->
+          <img src="TUIMG.png" style="margin-top: 80px;">
+          <div class ="nav-links" id="navLinks">
+                  <!-- <i class="fa fa-times" onclick="hideMenu()"></i> -->
+                  <img src="hamburger-removebg-preview.png"  onclick="showMenu()" class="fa fa-times" style="height: 100px; width: 100px; margin-top: 26px; margin-left: -74px;"></img>
+                  <!-- <img src="" -->
+              <ul>
+                  <img src="XIMG.png" onclick="hideMenu()" class="fa-bars" style="height: 50px; width: 50px; margin-top: -140px; margin-bottom: 25px;">
+                  <!-- <i class="fa fa-bars" onclick="hideMenu()"></i> -->
+                  <li><a href="blank.html">HOME</a></li>
+                  <li><a href="Contactus.html">CONTACT US</a></li>
+                  <li><a href="blank.html#about-us">ABOUT US</a></li>
+                  <li><a href="blankk.html">REGISTRATION</a></li>
+                  
+                  <!-- <li><a href="">BLOG</a></li> -->
+                  
+                  
+              </ul>
+     </section>
+
+
+
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Reach out whenever you need. We're here to support you every step of the journey.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <!-- <img src="location.png" class="icon" alt="" /> -->
+              <!-- <p>6560 Braddock Rd, Alexandria, VA 22312</p> -->
+            </div>
+            <div class="information">
+              <img src="email_dark_red.png" class="icon" alt="" />
+              <p>tutorupva@gmail.com</p>
+            </div>
+            <div class="information">
+              <img src="phone_dark_red-removebg-preview.png" class="icon" alt="" />
+              <p>703-231-6166</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=61561324620866">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.youtube.com/@TutorUPVA">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://www.tiktok.com/@tutorupva">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/tutorupva/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+            <input type="hidden" name="access_key" value="10dac7f7-93e3-452c-8154-a45ef98cb5f3">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <p>Copyright &copy; 2024 Tutor UP</p>
+
+    <script src="app.js"></script>
+
+
+
+
+    
+
+
+    <style>
+
+      .containerr {
+          position: relative;
+          max-width: 50%;
+        }
+        
+        .containerr img {
+          display: block;
+          width: 50%; /* Ensure the image takes up the full width of its container */
+          height: auto; /* Maintain aspect ratio */
+          margin-left: 178px;
+
+      }
+        
+        
+      .container h1 {
+          position: absolute;
+          top: 50%; /* Position the top of the element at the vertical center of its container */
+          left: 50%; /* Position the left side of the element at the horizontal center of its container */
+          transform: translate(55%, -50%); /* Center the element perfectly both vertically and horizontally */
+          color: #7a3939;
+          /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background */
+          padding: 10px 20px; /* Add padding around the text for spacing */
+          font-size: 35px;
+
+      }
+
+
+
+      /* footer */
+
+
+      .footer{
+          width: 100%;
+          text-align: center;
+          padding: 30px 0;
+          background-color: black;
+          color: white;
+
+
+      }
+
+
+      .footer h4{
+          margin-bottom: 25px;
+          margin-top: 20px;
+          font-weight: 600;
+      }
+
+
+
+
+      .back{
+          /* background-color: url(new_image_with_inner_circles\ \(1\).png); */
+          background-image: url(new_image_with_inner_circles\ \(1\).png);
+          /* filter: brightness(97%); */
+          
+      }
+
+
+
+
+      .icons{
+          color: white;
+      }
+
+
+
+      .course-col h3{
+          color: #7a3939;
+      }
+
+
+      .f{
+          color: darkblue;
+      }
+
+
+
+      .darkgreen{
+          color: #0b382f;
+      }
+
+
+
+
+
+
+
+
+
+
+      .footer h3{
+          margin-left: 0px;
+          margin-left: -900px;
+      }
+
+
+      .footer h4{
+          margin-left: 0px;
+          margin-left: -900px;
+          margin-top: 30px;
+          color: white;
+          
+      }
+
+
+      .links a{
+          margin-left: 0px;
+          margin-left: -900px;
+          margin-top: 30px;
+          color: white;
+          text-decoration: none;
+          color: white;
+          font-size: 19px;
+      }
+
+
+      .pvalue{
+          
+          margin-left: 222px;
+          margin-top: -192px;
+          font-size: 17px;
+
+      }
+    </style>
+    <script>
+      // Show/hide the navigation menu
+      function showMenu() {
+        document.getElementById('navLinks').style.right = "0";
+      }
+
+      function hideMenu() {
+        document.getElementById('navLinks').style.right = "-200px";
+      }
+
+      // Validate the phone number
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        const phoneInput = document.querySelector('input[name="phone"]');
+        const phonePattern = /^\d{10}$/;
+        const errorMessage = document.querySelector('.error-message');
+
+        if (!phonePattern.test(phoneInput.value)) {
+          e.preventDefault();
+          errorMessage.style.display = 'block';
+        } else {
+          errorMessage.style.display = 'none';
+        }
+      });
+    </script>
+    <script src="app.js"></script>
+
+
+
+    
+  </body>
+</html>

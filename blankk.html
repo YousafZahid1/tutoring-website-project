@@ -1,1 +1,849 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tutor UP: The Online, Self Paced Course</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="icontutorup-removebg-preview.png">
+  <!-- <link rel ="canonical" href="https://www.prepwisetutoring.com/registration"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/067f358492.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylez.css">
+  <meta name="description" content="Explore the comprehensive TJ Test Prep course offered by Tutor UP. Learn about our curriculum, including detailed sessions on the Student Portrait Sheet and Problem-Solving Essays, and how our approach can significantly improve your chances of success in the TJHSST admissions process. Register now and start your preparation with us!">
+
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  <style>
+    @media (max-width: 700px) {
+    .nav-links {
+        background-image: initial;
+        /* background-color: rgb(72, 11, 6); */
+    }
+}
+    /* Custom CSS to ensure image stays aligned and set custom color */
+    body {
+      font-family: 'Poppins', sans-serif; /* Apply the custom font to the entire document */
+      font-weight: 500; 
+      overflow-x:hidden;
+      animation: transitionIn 1s;
+    }
+
+    .no-color-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.no-color-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+    @keyframes transitionIn {
+      from{opacity:0; transform: translateY(-10px)}
+      to{ opacity:1; transform: translateY(0)}
+    }
+
+    #hovers-button{
+      transition: background-color 1s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #hovers-button:hover {
+        background-color: #832c2c;
+        transform: scale(1.1);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    }
+
+
+    @keyframes transitionIn {
+      from{opacity:0; transform: translateY(-10px)}
+      to{ opacity:1; transform: translateY(0)}
+    }
+
+    .navbar-nav .nav-link {
+      color: #E1D9D1; /* Change the color as per your preference */
+    }
+
+    .navbar-custom {
+      background-color: black;
+    }
+
+
+/* Change color to blue on hover */
+.dropdown-menu a.dropdown-item:hover {
+  color: #8b3d3d; /* Change color on hover */
+}
+
+    
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      color: white; /* Adjust text color */
+      transition: transform 0.3s ease; /* Add transition for smooth animation */
+      margin-left:2vw
+    }
+
+
+    /* Add hover animation to navbar brand */
+    .navbar-brand:hover {
+      transform: scale(1.1); /* Scale up by 10% on hover */
+      color: #D3D3D3;
+    }
+
+    @keyframes scaleIn {
+      from {
+        transform: scaleY(0);
+        opacity: 0;
+      }
+      to {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes scaleOut {
+      from {
+        transform: scaleY(1);
+        opacity: 1;
+      }
+      to {
+        transform: scaleY(0);
+        opacity: 0;
+      }
+    }
+
+   
+
+.btn-custom:hover{
+  transform:scale(1.05);
+  color:white;
+  transition:0.5s ease;
+  background-color: #552323;
+}
+
+.btn-custom{
+  transition:0.5s ease;
+}
+
+
+
+
+    /* Add underline hover animation to all navbar links except dropdown */
+    .navbar-nav > .nav-item > .nav-link:not(.dropdown-toggle) {
+      position: relative;
+      text-decoration: none;
+    }
+
+    .navbar-nav > .nav-item > .nav-link:not(.dropdown-toggle)::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: transparent; /* Adjust underline color */
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+ 
+
+    .navbar-nav > .nav-item > .nav-link:not(.dropdown-toggle):hover::before {
+      visibility: visible;
+      transform: scaleX(1);
+      background-color: #fff; /* Change the underline color on hover */
+    }
+
+
+.btn-custom {
+  background-color: black;
+  color: white;
+}
+
+.navbar-nav .nav-item.dropdown.show .nav-link {
+  color: white; /* Keep the color white when dropdown is open */
+}
+
+
+
+
+
+
+
+
+
+.flyer {
+    border: 3px solid #6b2e2e;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .flyer-header {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .price-tag {
+    background-color: #632020;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  /* Custom styles for bullet points */
+  .flyer li {
+    margin-bottom: 0.5rem;
+  }
+
+
+
+@media (min-width: 768px) {
+    #centering {
+      position: relative;
+      top: 15px;
+    }
+  }
+
+/* Default font size */
+.responsive-text {
+  font-size: 30px; /* You can adjust this value as needed */
+}
+
+    /* Override default Bootstrap container padding */
+    .container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+
+    footer {
+	background: black;
+	padding: 86px 0;
+}
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+
+
+
+.single-box p {
+	color: #fff;
+	line-height: 1.9;
+}
+.single-box h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+}
+.single-box .card-area i {
+	color: #ffffff;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.single-box ul {
+	list-style: none;
+	padding: 0;
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 2.5;
+	font-weight: 100;
+}
+.single-box h2 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+
+.socials i {
+	font-size: 18px;
+	margin-right: 15px;
+}
+@media (max-width: 767px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.single-box {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 768px) {
+  .navbar-nav > .nav-item > .nav-link:not(.dropdown-toggle)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .nav-item {
+    padding:20px;
+  }
+}
+
+@media(max-width:768px){
+  #curriculum{
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
+
+::selection{
+  background-color: black;
+  color:white
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar-nav > .nav-item > .nav-link:not(.dropdown-toggle)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-item{
+    padding:20px;
+  }
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* Styling for the navbar toggler icon */
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath d='M0 7h30v2H0zM0 13h30v2H0zM0 19h30v2H0z'%3E%3C/path%3E%3C/svg%3E");
+    background-size: cover;
+    filter: drop-shadow(0 0 5px white); /* Glow effect */
+}
+
+/* Styles specifically for mobile devices */
+@media (max-width: 767px) {
+    .navbar-toggler-icon {
+        width: 24px;
+        height: 24px; /* Smaller icon for mobile devices */
+    }
+}
+
+@media(max-width:400px){
+  #boxcontainer{
+    width:100vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+    
+  </style>
+<!-- <script src="https://localhost:49506/8ee4ea609a6346c4cf34c2b621ac79ba.js?nc=NjkzNjI4"></script> -->
+</head>
+<body>
+  <section class ="header">
+    <nav >
+      <img src="TUIMG.png" style="margin-top: 80px;">
+      <div class ="nav-links" id="navLinks">
+        <img src="hamburger-removebg-preview.png"  onclick="showMenu()" class="fa fa-times" style="height: 100px; width: 100px; margin-top: 26px;"></img>
+          <ul>
+            <img src="XIMG.png" onclick="hideMenu()" class="fa-bars" style="height: 50px; width: 50px; margin-top: -140px; margin-bottom: 109px;">
+              <li><a href="blank.html">HOME</a></li>
+              <li><a href="Contactus.html">CONTACT US</a></li>
+              <li><a href="blank.html#about-us">ABOUT US</a></li>
+              <li><a href="blankk.html">REGISTRATION</a></li>
+              
+              <!-- <li><a href="">BLOG</a></li> -->
+              
+              
+          </ul>
+
+      </div>
+      <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+      <!-- <img src="hamburger.png" onclick="showMenu()"></img> -->
+  </nav>
+</section>
+<!-- 
+  <noscript>
+    <div style="background-color: #ffdddd; border-left: 6px solid #f44336; margin: 20px; padding: 15px;">
+      <strong>JavaScript Disabled!</strong> You must have JavaScript enabled in order to use this site.
+    </div>
+  </noscript>
+  <nav class="navbar navbar-expand-lg navbar-custom"> <!-- Add the custom class -->
+    <!-- <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="PrepWise.png"  class="img-fluid me-2" width="40px" height="40px" alt="prepwise logo">
+        PrepWise
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 2vw">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" style="color:white;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+          
+  
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html"><strong>Registration</strong></a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>    
+ --> 
+
+
+
+
+
+
+  <div class="container-fluid" style="background-color: #0e0f0e; margin-bottom:15%"> 
+    <p class="h1 text-center display-2" style="color: white; padding: 10%; font-family: Poppins;"><strong>Our Offerings</strong></p>
+</div>
+  
+
+  <h1 class="text-center display-2" style="padding:50px; margin-top:-12%" ><span style="color:#662525">Our</span> Curriculums</h1>
+
+
+  <div class="container-fluid" id="boxcontainer" style="width: 95vw; max-width: 100%; border:2px solid rgb(15, 22, 126);">
+    <div class="row">
+      <div class="col-md-4" id="curriculum">
+        <h1 class="display-6" style="padding:50px; padding-top: 30px;">
+          Online, <span class="break"> </span>
+          Self Paced <span class="break"> </span>
+          Course: $250<span class="break"> </span>
+        </h1>
+      </div>
+      
+      <div class="col-md-8" style="padding: 30px">
+        <h2 class="section-header">Student Portrait Sheet (SPS)</h2>
+        <ul class="content-list">
+          <li>Guidance on crafting and structuring responses for SPS</li>
+          <li>Access to SPS-specific templates, strategic approaches, and organization checklists</li>
+          <li>Techniques for narrating your extracurricular activities</li>
+          <li>Compilation of ready-to-use responses, flexible for various prompts</li>
+          <li>Collection of a multitude of practice prompts and self-made prompts, based off previous years. Prompts from the years 2020 to 2024 are included.</li>
+        </ul>
+        
+        <h2 class="section-header">Math and Science Problem-Solving Essays (PSE)</h2>
+        <ul class="content-list">
+          <li>Development, organization, and authoring of responses for PSE in math and science</li>
+          <li>Resource kit with PSE structure templates, procedural guides, and checklists</li>
+          <li>Educational videos and materials for math and science concepts</li>
+        </ul>
+        
+        <h2 class="section-header">Personalized Feedback</h2>
+        <ul class="content-list">
+          <li>Opportunity to receive detailed feedback on practice responses from our teaching staff</li>
+          <li>Custom feedback provided usually within a week for up to ten submitted responses</li>
+        </ul>
+        
+        <h2 class="section-header">Additional Benefits</h2>
+        <ul class="content-list" style="padding-bottom:20px">
+          <li>Practice assignments are modeled after historical exam formats</li>
+          <li>Advice on time management and common mistake avoidance for test days</li>
+          <li>A price of only $250, making Tutor UP the most affordable TJ Prep you can have!</li>
+        </ul>
+      </div> 
+  </div>
+</div>
+<div style="padding:20px">
+  <a href="registrationform.html"> <button type="button" class="btn btn-custom btn-lg" style="margin-left:1%; margin-top:1%; padding: 10px 25px">Register Now</button></a>
+</div>
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+<br>
+<br>
+
+<!-- hello world -->
+
+
+<!-- <div class="container-fluid" style="background-color: #0e0f0e; margin-bottom:15%"> 
+  <p class="h1 text-center display-2" style="color: white; padding: 10%; font-family: Poppins;"><strong>The Online, Self Paced Course</strong></p>
+</div>
+
+
+<h1 class="text-center display-2" style="padding:50px; margin-top:-12%" ><span style="color:#662525">Our</span> Curriculum</h1>
+ -->
+
+<div class="container-fluid" id="boxcontainer" style="width: 95vw; max-width: 100%; border:2px solid red;">
+  <div class="row">
+    <div class="col-md-4" id="curriculum">
+      <h1 class="display-6" style="padding:50px; padding-top: 30px;">
+        Online Tutoring, by <span class="break"> </span>
+         TJHSST's Top Students <span class="break"> </span>
+        Hourly: $35<span class="break"> </span>
+      </h1>
+    </div>
+    
+    <div class="col-md-8" style="padding: 30px">
+      <h2 class="section-header">Top-Notch Tutors:</h2>
+      <ul class="content-list">
+        <li>Our tutors are top-ranked students from TJHSST, ensuring you receive guidance from those who have mastered the material themselves.</li>
+        <!-- <li>Access to SPS-specific templates, strategic approaches, and organization checklists</li>
+        <li>Techniques for narrating your extracurricular activities</li> -->
+        <li>Our tutors have demonstrated academic excellence, with a track record of high performance in their own studies.</li>
+        <li>Benefit from relatable, peer-to-peer learning that makes complex concepts easier to understand.</li> 
+      </ul>
+      
+      <h2 class="section-header">Affordable Excellence:</h2>
+      <ul class="content-list">
+        <li>At only $35 per session, we provide high-quality tutoring at a fraction of the cost.</li>
+        <!-- <li>Resource kit with PSE structure templates, procedural guides, and checklists</li>
+        <li>Educational videos and materials for math and science concepts</li> -->
+        <li> Achieve your academic goals without breaking the bank.</li>
+        <li>Receive premium tutoring services at a price that is accessible for all, providing exceptional value for your investment.</li>
+    </ul>
+      
+      <h2 class="section-header">Personalized Match:</h2>
+      <ul class="content-list">
+        <li>We carefully select the best tutor to fit your individual needs, ensuring a personalized and effective learning experience.</li>
+        <!-- <li>Custom feedback provided usually within a week for up to ten submitted responses</li> -->
+      </ul>
+      
+      <h2 class="section-header">Flexible Scheduling:</h2>
+      <ul class="content-list" style="padding-bottom:20px">
+        <li>You have the freedom to choose the date and time that works best for you, accommodating even the busiest schedules.</li>
+        <!-- <li>Advice on time management and common mistake avoidance for test days</li>
+        <li>A price of only $250, making Tutor UP the most affordable TJ Prep you can have!</li> -->
+      </ul>
+
+      <h2 class="section-header">Continuous Improvement:</h2>
+      <ul class="content-list" style="padding-bottom:20px">
+        <li>We actively listen to our customers' feedback and continually refine our services based on your input, ensuring we meet and exceed your expectations.</li>
+        <!-- <li>Advice on time management and common mistake avoidance for test days</li>
+        <li>A price of only $250, making Tutor UP the most affordable TJ Prep you can have!</li> -->
+      </ul>
+
+      <h2 class="section-header">Flexible Scheduling:</h2>
+      <ul class="content-list" style="padding-bottom:20px">
+        <li>You have the freedom to choose the date and time that works best for you, accommodating even the busiest schedules.</li>
+        <!-- <li>Advice on time management and common mistake avoidance for test days</li>
+        <li>A price of only $250, making Tutor UP the most affordable TJ Prep you can have!</li> -->
+      </ul>
+    </div> 
+</div>
+</div>
+<div style="padding:20px">
+<a href="register.html"> <button type="button" class="btn btn-custom btn-lg" style="margin-left:1%; margin-top:1%; padding: 10px 25px">Register Now</button></a>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<br>
+<br>
+
+<!-- <p>WHAT IS YORU NAME</p> -->
+
+
+<footer>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-sm-6">
+              <div class="single-box">
+                  <img src="TUIMG.png" width="200px" height="300px" >
+              <p>Note: This website offers educational services and products for purchase.</p>
+
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="single-box">
+                  <h2>Useful Links</h2>
+              <ul>
+                  <li><a href="blank.html#about-us">About Us</a></li>
+                  <!-- <li><a href="faq.html">FAQ</a></li> -->
+                  <li><a href="blankk.html">Registration</a></li>
+                  <li><a href="contactus.html">Contact Us</a></li>
+                  <li><a href="termsandservices.html">Terms of Service</a></li>
+                  
+              </ul>
+              </div>                    
+          </div>
+
+        <div class="col-lg-3 col-sm-6">
+          <div class="single-box">
+              <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:tutorupva@gmail.com">Email: tutorupva@gmail.com</a></li>
+              <li><a href="tel: 571-483-8524">Phone Number: 703-231-6166</a></li>
+          </ul>
+          </div>                    
+      </div>
+                              
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+            <h2>Follow us on</h2>
+            <p class="socials">
+              <a href="https://www.facebook.com/profile.php?id=61561324620866" class="no-color-link"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/tutorupva" class="no-color-link"><i class="fa fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/@TutorUPVA" class="no-color-link"><i class="fa fa-youtube"></i></a>
+              
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const registrationLink = document.querySelector('.nav-item.dropdown .nav-link');
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+
+  // Function to show dropdown menu
+  const showDropdown = function() {
+    dropdownMenu.classList.add('visible');
+    dropdownMenu.classList.remove('hidden');
+    dropdownMenu.style.display = 'block'; // Ensure the menu is displayed
+  };
+
+  // Function to hide dropdown menu
+  const hideDropdown = function() {
+    dropdownMenu.classList.add('hidden');
+    dropdownMenu.classList.remove('visible');
+    // Wait for animation to finish before hiding the menu
+    setTimeout(() => {
+      if (!dropdownMenu.classList.contains('visible')) {
+        dropdownMenu.style.display = 'none'; // Hide the menu after the animation
+      }
+    }, 500); // This should match the animation duration
+  };
+
+  // Toggle dropdown menu when the registration link is clicked
+  registrationLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation(); // Stop the event from propagating to the body click event listener
+    if (dropdownMenu.classList.contains('visible')) {
+      hideDropdown();
+    } else {
+      showDropdown();
+    }
+  });
+
+  // Close dropdown menu when clicking outside the menu
+  document.addEventListener('click', function(event) {
+    const isClickInsideDropdown = dropdownMenu.contains(event.target);
+    const isClickInsideRegistrationLink = registrationLink.contains(event.target);
+    
+    if (!isClickInsideDropdown && !isClickInsideRegistrationLink) {
+      hideDropdown();
+    }
+  });
+});
+
+  </script>
+
+<!-- <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "PrepWise",
+    "url": "https://prepwisetutoring.com",
+    "logo": "https://prepwisetutoring.com/static/PrepWise.png",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61559207361117",
+      "https://www.youtube.com/@TUTORUPVA"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6560 Braddock Rd Alexandria VA 22312",
+      "addressLocality": "Alexandria",
+      "addressRegion": "Virginia",
+      "postalCode": "22312",
+      "addressCountry": "USA"
+    }
+  }
+  </script>
+   -->
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
+
+    navbarToggler.addEventListener('click', function() {
+        // Toggle 'active' class on click
+        this.classList.toggle('active');
+        
+        // Animation for rotating the icon when clicked
+        if (this.classList.contains('active')) {
+            this.style.transform = 'rotate(90deg)';
+        } else {
+            this.style.transform = 'rotate(0deg)';
+        }
+    });
+
+    // Add event listener to document to handle clicks outside of the navbar toggler
+    document.addEventListener('click', function(event) {
+        if (!navbarToggler.contains(event.target) && navbarCollapse.classList.contains('show')) {
+            navbarToggler.classList.remove('active');
+            navbarToggler.style.transform = 'rotate(0deg)';
+        }
+    });
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <p>Copyright &copy 2024 Tutor UP</p>
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+
+
+
+<style>
+  .nav{
+    height: 62px;
+  }
+</style>
+</body>
+</html>
